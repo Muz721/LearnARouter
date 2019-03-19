@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.muz.learnarouter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".testActivity.SchameFilterActivity">
+            <intent-filter>
+                <data
+                    android:host="m.muz.com"
+                    android:scheme="arouter"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+            <action android:name="android.intent.action.VIEW"/>
+
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+
+            <data
+                android:host="m.muz.com"
+                android:scheme="http"/>
+            <data
+                android:host="m.muz.com"
+                android:scheme="https"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".testActivity.Test1Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".testActivity.Test2Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".testActivity.Test3Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".testActivity.Test4Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".testActivity.TestWebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".testActivity.Test5Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".testActivity.Test6LoginActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
