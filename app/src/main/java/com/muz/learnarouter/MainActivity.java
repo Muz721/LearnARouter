@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements MultiItemTypeAdap
         ARouter.openLog();
         ARouter.openDebug();
         ARouter.init(getApplication());//初始化
+        //TODO 测试
     }
 
     @Override

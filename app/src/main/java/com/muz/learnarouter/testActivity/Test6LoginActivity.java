@@ -18,5 +18,6 @@ public class Test6LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_test_1);
         TextView textView = (TextView) findViewById(R.id.textView);
         textView.setText("6");
+        //TODO 添加
     }
 }
